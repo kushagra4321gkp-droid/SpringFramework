@@ -6,11 +6,16 @@
 
     <!-- bean definitions here -->
     <bean id="human" class="com.example.demo.Human">
-        <property name="age" value="22"></property>
-        <property name="lap" ref="lap1"></property>
+
+        <constructor-arg index="1" ref="lap"/>
+        <constructor-arg index="0" value="21"/>
+
+
+<!--        <property name="age" value="22"/>-->
+<!--        <property name="lap" ref="lap1"/>-->
     </bean>
 
-    <bean id="lap1" class="com.example.demo.Laptop">
+    <bean id="lap" class="com.example.demo.Laptop">
     </bean>
 
 </beans>

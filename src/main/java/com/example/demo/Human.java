@@ -3,11 +3,15 @@ package com.example.demo;
 public class Human {
 
     int age;
-
     private Laptop lap;
 
     public Human(){
         System.out.println("Human object created");
+    }
+
+    public Human(int age, Laptop lap) {
+        this.age = age;
+        this.lap = lap;
     }
 
     public int getAge() {
