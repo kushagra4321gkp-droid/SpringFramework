@@ -3,16 +3,16 @@ package com.example.demo;
 public class Human {
 
     int age;
-    private Laptop lap;
+    private Computer com;
 
     public Human(){
         System.out.println("Human object created");
     }
 
-    public Human(int age, Laptop lap) {
-        this.age = age;
-        this.lap = lap;
-    }
+//    public Human(int age, Computer com) {
+//        this.age = age;
+//        this.com = com;
+//    }
 
     public int getAge() {
         return age;
@@ -22,22 +22,18 @@ public class Human {
         this.age = age;
     }
 
-    public Laptop getLap() {
-        return lap;
+    public Computer getCom() {
+        return com;
     }
 
-    public void setLap(Laptop lap) {
-        this.lap = lap;
+    public void setCom(Computer com) {
+        this.com = com;
     }
 
     public void code(){
         System.out.println("Coding...");
-        lap.compile();
+        com.compile();
 
     }
-
-
-
-
 
 }

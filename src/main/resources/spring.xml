@@ -5,17 +5,21 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="human" class="com.example.demo.Human">
+    <bean id="human" class="com.example.demo.Human" autowire="byName">
 
-        <constructor-arg index="1" ref="lap"/>
-        <constructor-arg index="0" value="21"/>
+        <property name="age" value="22"/>
+<!--        <property name="com" ref="com"/>-->
+
+<!--        <constructor-arg index="1" ref="lap"/>-->
+<!--        <constructor-arg index="0" value="21"/>-->
 
 
-<!--        <property name="age" value="22"/>-->
-<!--        <property name="lap" ref="lap1"/>-->
     </bean>
 
-    <bean id="lap" class="com.example.demo.Laptop">
+    <bean id="com" class="com.example.demo.Laptop">
+    </bean>
+
+    <bean id="com1" class="com.example.demo.Desktop">
     </bean>
 
 </beans>
