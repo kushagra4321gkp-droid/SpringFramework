@@ -6,6 +6,7 @@
 
     <!-- bean definitions here -->
     <bean id="human" class="com.example.demo.Human">
+        <property name="age" value="22"></property>
     </bean>
 
     <bean id="lap" class="com.example.demo.Laptop">

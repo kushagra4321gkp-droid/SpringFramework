@@ -15,6 +15,13 @@ public class App
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
+        Human obj = (Human) context.getBean("human");
+        System.out.println(obj.age);
+
+
+//        obj.setAge(21);
+//        System.out.println(obj.age);
+
 //        Human obj = (Human) context.getBean("human");
 //        obj.code();
 
