@@ -17,6 +17,7 @@ public class App
 
         Human obj = (Human) context.getBean("human");
         System.out.println(obj.age);
+        obj.code();
 
 
 //        obj.setAge(21);

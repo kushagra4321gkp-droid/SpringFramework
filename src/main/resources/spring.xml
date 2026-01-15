@@ -7,9 +7,10 @@
     <!-- bean definitions here -->
     <bean id="human" class="com.example.demo.Human">
         <property name="age" value="22"></property>
+        <property name="lap" ref="lap1"></property>
     </bean>
 
-    <bean id="lap" class="com.example.demo.Laptop">
+    <bean id="lap1" class="com.example.demo.Laptop">
     </bean>
 
 </beans>
