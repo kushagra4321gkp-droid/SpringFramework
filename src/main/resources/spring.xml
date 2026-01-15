@@ -8,4 +8,7 @@
     <bean id="human" class="com.example.demo.Human">
     </bean>
 
+    <bean id="lap" class="com.example.demo.Laptop">
+    </bean>
+
 </beans>

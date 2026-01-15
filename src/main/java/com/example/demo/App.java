@@ -15,8 +15,8 @@ public class App
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Human obj = (Human) context.getBean("human");
-        obj.code();
+//        Human obj = (Human) context.getBean("human");
+//        obj.code();
 
     }
 }
