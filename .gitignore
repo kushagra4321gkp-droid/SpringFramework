@@ -1,0 +1,66 @@
+# ----------------------------
+# IntelliJ IDEA
+# ----------------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ----------------------------
+# Maven / Gradle
+# ----------------------------
+target/
+build/
+.gradle/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle-cache/
+
+# ----------------------------
+# Logs
+# ----------------------------
+*.log
+
+# ----------------------------
+# OS Files
+# ----------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------
+# Eclipse (if you ever import)
+# ----------------------------
+.project
+.classpath
+.settings/
+
+# ----------------------------
+# Spring Boot
+# ----------------------------
+spring-boot-devtools.properties
+spring-boot-devtools.jar
+
+# ----------------------------
+# Test / Temporary files
+# ----------------------------
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ----------------------------
+# JetBrains specific
+# ----------------------------
+.idea/
+*.iml
+*.iws
+.idea_modules/
+*.ipr
+
+# ----------------------------
+# Misc
+# ----------------------------
+.vscode/
+node_modules/
+*.env
