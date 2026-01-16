@@ -26,5 +26,7 @@ public class App
 //        Human obj = (Human) context.getBean("human");
 //        obj.code();
 
+//        Desktop desk = context.getBean("desk1", Desktop.class);
+
     }
 }

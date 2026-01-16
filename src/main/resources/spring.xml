@@ -19,7 +19,7 @@
     <bean id="com" class="com.example.demo.Laptop">
     </bean>
 
-    <bean id="com1" class="com.example.demo.Desktop">
+    <bean id="desk1" class="com.example.demo.Desktop" lazy-init="true">
     </bean>
 
 </beans>
