@@ -14,11 +14,15 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        Desktop dt = context.getBean("desktop", Desktop.class);
-        dt.compile();
+//        Desktop dt = context.getBean("desktop", Desktop.class);
+//        dt.compile();
 
-        Desktop dt1 = context.getBean("desktop", Desktop.class);
-        dt.compile();
+        Human h1 = context.getBean(Human.class);
+        System.out.println(h1.getAge());
+        h1.code();
+
+//        Desktop dt1 = context.getBean("desktop", Desktop.class);
+//        dt.compile();
 
 
 

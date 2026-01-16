@@ -18,7 +18,7 @@ public class Human {
         return age;
     }
     public void setAge(int age) {
-        System.out.println("setter called");
+        //System.out.println("setter called");
         this.age = age;
     }
 
