@@ -2,7 +2,7 @@ package com.example.demo;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("com")
 public class Desktop implements Computer{
 
     public Desktop(){
