@@ -1,6 +1,8 @@
 package com.example.demo;
 
+import com.example.demo.config.AppConfig;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -11,13 +13,25 @@ public class App
 {
     public static void main( String[] args )
     {
-//        System.out.println( "Hello World!" );
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        Desktop dt = context.getBean(Desktop.class);
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 
-        Human obj = (Human) context.getBean("human");
-        System.out.println(obj.age);
-        obj.code();
+
+
+
+
+
+
+
+
+
+                                  //XML Based Configuration
+
+//        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
+//        Human obj = (Human) context.getBean("human");
+//        System.out.println(obj.age);
+//        obj.code();
 
 
 //        obj.setAge(21);
