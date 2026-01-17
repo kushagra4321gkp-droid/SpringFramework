@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 public class Human {
 
     int age;
-    @Autowired
-    @Qualifier("com")
+//    @Autowired
+//    @Qualifier("com")
     private Computer com;
 
     public Human(){
@@ -33,7 +33,8 @@ public class Human {
         return com;
     }
 
-    public void setCom(Computer com) {
+    @Autowired
+    public void setCom(@Qualifier("com") Computer com) {
         this.com = com;
     }
 
